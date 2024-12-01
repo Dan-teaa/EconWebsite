@@ -1,0 +1,99 @@
+/* General Navbar Styles */
+.navBar {
+    width: 100%;
+    font-family: Arial, sans-serif;
+}
+
+/* Top Red Section */
+.topNav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #900028;
+    color: white;
+    padding: 5px 20px;
+}
+
+.topNav .navLinks {
+    display: flex;
+    gap: 15px;
+}
+
+.navLinks a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.navLinks a:hover {
+    text-decoration: underline;
+}
+
+.menuToggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+.loginButton {
+    background: none;
+    border: 1px solid white;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.loginButton:hover {
+    background: white;
+    color: #900028;
+}
+
+/* Middle White Section */
+.middleNav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 15px 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.fordhamNameImg {
+    height: 40px;
+}
+
+/* Bottom Red Section */
+.bottomNav {
+    height: 5px;
+    background-color: #900028;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .navLinks {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        position: absolute;
+        top: 40px;
+        right: 20px;
+        background: white;
+        border: 1px solid #900028;
+        padding: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .menuToggle {
+        display: block;
+    }
+
+    .menuToggle.open + .navLinks {
+        display: flex;
+    }
+}

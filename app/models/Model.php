@@ -9,15 +9,16 @@ abstract class Model {
         return $this->query($query);
     }
 
+    //Removed for now, as I'm not sure if I need it.
     private function connect() {
         $string = "mysql:hostname=" . DBHOST . ";dbname=" . DBNAME;
         $con = new \PDO($string, DBUSER, DBPASS);
         return $con;
     }
-
+    
     public function query($query, $data = []) {
-        $con = $this->connect();
-        $stm = $con->prepare($query);
+        $conn = $this->connect();
+        $stm = $conn->prepare($query);
         $check = $stm->execute($data);
         if ($check) {
             $result = $stm->fetchAll(\PDO::FETCH_OBJ);

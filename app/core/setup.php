@@ -1,12 +1,10 @@
 <?php
 
+
 //require our files, remember should be relative to index.php
 require '../app/core/Router.php';
-require '../app/models/Model.php';
-require '../app/controllers/Controller.php';
 require '../app/controllers/MainController.php';
-require '../app/controllers/UserController.php';
-require '../app/models/User.php';
+// require '../app/models/Model.php';
 
 
 //set up env variables
@@ -20,3 +18,12 @@ define('DBDRIVER', '');
 
 //set up other configs
 define('DEBUG', true);
+
+//Establish Connection with database
+//I think I may be able to delete this later, so it's only accessed via model. 
+try {
+    $conn = new PDO("mysql:host=" . DBHOST . ";dbname=" . DBNAME, DBUSER, DBPASS);
+    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+} catch (PDOException $e) {
+    echo "Connection failed: " . $e->getMessage();
+}

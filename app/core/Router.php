@@ -1,9 +1,7 @@
 <?php
 
 namespace app\core;
-
 use app\controllers\MainController;
-use app\controllers\UserController;
 
 class Router {
     public $urlArray;
@@ -12,7 +10,6 @@ class Router {
     {
         $this->urlArray = $this->routeSplit();
         $this->handleMainRoutes();
-        $this->handleUserRoutes();
     }
 
     protected function routeSplit() {
@@ -27,7 +24,7 @@ class Router {
         }
     }
 
-    protected function handleUserRoutes() {
+    /*protected function handleUserRoutes() {
         if ($this->urlArray[1] === 'users' && $_SERVER['REQUEST_METHOD'] === 'GET') {
             $userController = new UserController();
             $userController->usersView();
@@ -38,5 +35,5 @@ class Router {
             $userController = new UserController();
             $userController->getUsers();
         }
-    }
+    }*/
 }

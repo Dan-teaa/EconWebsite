@@ -1,3 +1,424 @@
-p {
-    color: blue;
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    
 }
+
+body {
+    height: 100vw;
+    width: 100vw;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    
+}
+
+/* General Navbar Styles */
+.navBar {
+    width: 100%;
+    font-family: "Roboto Flex", Arial, sans-serif;
+    
+}
+
+/* Top Red Section */
+.topNav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #900028;
+    color: white;
+    padding: 5px 20px;
+}
+
+.topNav .navLinks {
+    display: flex;
+    gap: 15px;
+}
+
+.navLinks a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.navLinks a:hover {
+    text-decoration: underline;
+}
+
+.menuToggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+.loginButton {
+    background: none;
+    border: 1px solid white;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-family: "Roboto Flex", Arial, sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.loginButton:hover {
+    background: white;
+    color: #900028;
+}
+
+/* Middle White Section */
+.middleNav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding-top: 20px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.fordhamNameImg {
+    height: 35px;
+}
+
+.middleNav h2 {
+    font-family: "Roboto Flex", Arial, sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+    color : #282220;
+}
+
+/* Bottom Red Section */
+.bottomNav {
+    height: 5px;
+    background-color: #900028;
+}
+
+/* --- HERO SECTION --- */
+/* Hero Section */
+.hero {
+    background-image: url('/assets/views/images/economic-background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+
+.heroContent {
+    width: 70%;
+    text-align: center;
+    color: #282220;
+    margin-top: 150px;
+}
+
+.missionBox {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.missionBox h1 {
+    font-family: "Roboto Flex", Arial, sans-serif;
+    font-size: 28px;
+    color: #900028;
+    margin-bottom: 10px;
+}
+
+.missionBox p {
+    font-family: "Roboto Flex", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #282220;
+}
+
+/* Main Body Section */
+.mainBody {
+    background-color: #ffffff;
+    padding: 30px 20px;
+}
+
+.mainBodyContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+.mainBodyImages {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.mainBodyImages img {
+    width: 100%;
+    /*max-height: 300px;*/
+    object-fit: cover;
+    object-position: center 0%;
+    border: 2px solid #900028;
+}
+
+.aboutUs {
+    flex: 2;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.aboutUs h1 {
+    font-family: "Roboto Flex", Arial, sans-serif;
+    font-size: 24px;
+    color: #900028;
+    margin-bottom: 10px;
+}
+
+.aboutUs p {
+    font-family: "Roboto Flex", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #282220;
+}
+
+.eventBox {
+    flex: 1;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.eventBox h1 {
+    font-family: "Roboto Flex", Arial, sans-serif;
+    font-size: 24px;
+    color: #900028;
+    margin-bottom: 15px;
+}
+
+#eventsContainer {
+    font-family: "Roboto Flex", Arial, sans-serif;
+    font-size: 16px;
+    color: #282220;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*.navBar {
+    width: 100vw;
+}
+.topNav {
+    height: 30px;
+    width: 100vw;
+    background-color: #900028;
+    border: 2px solid #900028;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    box-shadow: 0px -30px 70px #282220;
+}
+
+
+
+.bottomNav {
+    height: 10px;
+    width: 100vw;
+    background-color: #900028;
+}
+
+
+.loginButton {
+    height: 25px;
+    width: 100px;
+    font-size: 14px;
+    margin-right: 15px;
+    margin-top: 2px;
+    margin-bottom: 5px;
+    background-color: #900028;
+    color: white;
+    border:2px solid #FFFFFF;
+    border-radius: 5px;
+
+}
+
+
+
+.middleNav {
+    display: flex;
+    flex-direction: row;
+    column-gap: 60%;
+   
+    width: 100vw;
+    padding-top: 23px;
+    padding-bottom: 23px;
+    padding-left: 23px;
+    padding-right: 23px;
+
+
+}
+.fordhamNameImg {
+    height: 24px;
+    width: 320px;
+    
+}
+
+.navLinks {
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+   
+    column-gap: 5%;
+
+}
+.header {
+    background-image: url("/assets/views/images/central-park-sunrise-l.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 650px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    
+}
+
+.pageTitleBox {
+    height: 200px;
+    width: 700px;
+    display: flex;
+    flex-direction: row;
+    background-color: #FFFFFF;
+    margin-top: 500px;
+    border-top-right-radius: 30px;
+    padding-top: 23px;
+}
+
+.headerLogo {
+    height: 200px;
+    width: 200px;
+    margin-right: 10px;
+    margin-left: 23px;
+}
+
+.headerText {
+    display: flex;
+    flex-direction: column;;
+    margin-top: 0px;
+    
+}
+
+.headerText h1 {
+    font-size: 50px;
+    color: #282220;
+    border-bottom: 2px solid #900028;
+    margin-bottom: 0px;
+    padding-bottom: 10px;
+}
+
+.headerText h2 {
+    font-size: 30px;
+    color: #282220;
+    margin-top: 10px;
+}
+
+.mainBody {
+    height: 1000px;
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 0px 20px 70px #282220;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.mainBodyContainer {
+    height: 900px;
+    width: 95%;
+    padding: 23px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 25px;
+    
+    
+}
+
+.mainBodyImages {
+
+    width: 30%;
+    border: 2px solid #900028;
+    margin-top: 69px;
+     
+    
+}
+
+.innerBodyBox {
+   
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid blue;
+    row-gap: 40px;
+}
+
+.missionStatement {
+    border: 2px solid #900028;
+    background-color: #ffffff;
+    font-size: 20px;
+ 
+}
+
+.aboutUs {
+   background-color: #ffffff;
+   border-radius: 5px;
+   font-size: 20px;
+   border: 2px solid #900028;
+
+}
+
+
+.eventBox {
+    width: 25%;
+    text-align: center;
+    background-color: #ffffff;
+    border: 2px solid #900028;
+}
+
+.footer {
+    height: 230px;
+    width: 100%;
+    background-color: #900028;
+}*/
